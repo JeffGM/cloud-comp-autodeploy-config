@@ -5,6 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 import numpy as np
 from joblib import dump, load
+from io import BytesIO
 
 raw_training_data = pd.read_csv("./dataset/training.csv", on_bad_lines='skip', sep=';')
 raw_test_data = pd.read_csv("./dataset/test.csv", on_bad_lines='skip', sep=';')

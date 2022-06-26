@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cloud-comp-predictor-service
+spec:
+  selector:
+    app: cloud-comp-predictor
+  ports:
+    - protocol: TCP
+      port: 5014
+      targetPort: 5014

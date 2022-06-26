@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-comp-predictor-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cloud-comp-predictor
+  template:
+    metadata:
+      labels:
+        app: cloud-comp-predictor
+    spec:
+      containers:
+      - name: cloud-comp-predictor
+        image: jeovaneml/cloud-comp-predictor:1.0.1
+        ports:
+        - containerPort: 5014

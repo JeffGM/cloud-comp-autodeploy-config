@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: cloud-comp-predictor
-        image: jeovaneml/cloud-comp-predictor:1.0.3
+        image: jeovaneml/cloud-comp-predictor:1.0.4
         ports:
         - containerPort: 5014
